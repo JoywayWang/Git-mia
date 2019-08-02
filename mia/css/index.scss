@@ -252,6 +252,7 @@
 
 //nav导航及tab--------------------------------------
 .nav {
+    // clear: both;
     background-color: #ff3893;
 
     .content {
@@ -282,11 +283,15 @@
                 background: rgba(255, 255, 255, .9);
 
                 li {
+                    background: #000;
+
+
+
                     dl {
                         position: relative;
                         padding: 0 12px;
-                        // overflow: hidden;
 
+                        // overflow: hidden;
                         dt {
                             padding: 5px 10px 9px 10px;
                             border-top: 1px dashed #d1d1d1;
@@ -306,7 +311,7 @@
                                     color: #fb60a7;
                                     font-weight: bold;
                                     line-height: 21px;
-                                    font-size: 16px;
+                                    font-size: 14px;
                                 }
                             }
 
@@ -328,11 +333,107 @@
                             }
                         }
 
+
                         dd {
+                            // clear: both;
+                            background: #fff;
+                            position: absolute;
                             display: none;
+                            left: 230px;
+                            // width: 1000px;
+                            top: 0;
+                            border: 1px solid #ccc;
+                            white-space: nowrap;
+
+                            .t_left {
+                                float: left;
+                                // display: inline-block;
+                                width: 580px;
+                                white-space: normal;
+
+                                .lala {
+                                    width: 250px;
+                                    padding: 10px;
+                                    // display: inline-block;
+                                    float: left;
+
+                                    h3 {
+                                        padding-bottom: 8px;
+                                        font-size: 14px;
+                                        border-bottom: 1px solid #000;
+                                        color: #222;
+                                    }
+
+                                    p {
+                                        margin-top: 10px;
+                                        line-height: 18px;
+                                        width: 250px;
+
+                                        a {
+                                            color: #fa4b9b;
+                                            display: inline-block;
+                                            // vertical-align: top;
+                                            margin-right: 10px;
+                                            line-height: 18px;
+                                            height: 18px;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .t_right {
+                                height: 100%;
+                                background: #fff;
+                                display: inline-block;
+                                // float: left;
+                                // float: right;
+                                margin: 15px 20px 0px 13px;
+                                max-width: 244px;
+
+
+                                h3 {
+                                    padding-bottom: 8px;
+                                    font-size: 14px;
+                                    color: #222;
+
+                                }
+
+                                div {
+                                    a {
+                                        float: left;
+                                        margin: 0 0 -1px -1px;
+                                        width: 80px;
+                                        height: 80px;
+                                        overflow: hidden;
+                                        border: 1px solid #e5e5e5;
+                                        font-size: 0;
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .ddactive {
+                            display: block;
                         }
                     }
+
+                    dl:hover {
+                        background: #fff;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                        border-left: 3px solid #F00;
+                    }
+
+
                 }
+
+
             }
         }
 
@@ -352,16 +453,34 @@
                     color: #fff;
                     font-size: 16px;
                 }
+
+                .liactive {
+                    background-color: rgba(70, 31, 31 .7);
+                }
             }
+
+
         }
     }
 }
 
 //banner不会动怎么办---------
 .banner {
-    background-image: url("../img/852e398c216ba60d17109396d68c8bb6341922309.png");
+    // background-image: url("../img/852e398c216ba60d17109396d68c8bb6341922309.png");
     height: 480px;
     width: 100%;
-    background-size: auto 480px;
-    background-position: center;
+    // background-size: auto 480px;
+    // background-position: center;
+
+    .swiper-container {
+        width: 100%;
+        height: 480px;
+
+        .swiper-slide {
+            background-size: auto 480px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    }
 }
