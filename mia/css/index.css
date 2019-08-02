@@ -46,6 +46,7 @@
 .top .content .a-souji span {
   margin: 0;
   line-height: 29px;
+  color: #666;
 }
 
 .top .content span {
@@ -58,6 +59,10 @@
 }
 
 .top .content .a_active {
+  color: #fa4b9b;
+}
+
+.top .content .a_active span {
   color: #fa4b9b;
 }
 
@@ -173,13 +178,6 @@
   text-align: center;
 }
 
-.header .content .r .cart .a-hover {
-  height: 38px;
-  border-bottom: none;
-  border-color: #fa4b9b;
-  color: #666;
-}
-
 .header .content .r .cart .cart-more {
   display: none;
   position: absolute;
@@ -196,8 +194,35 @@
   font-size: 12px;
 }
 
-.header .content .r .cart .cart-morehover {
+.header .content .r .a-hover {
+  height: 40px;
+  background: #fff;
+  border: 1px solid #fa4b9b;
+  border-bottom: none;
+  color: #666;
+  box-sizing: border-box;
+}
+
+.header .content .r .a-hover .ahovera {
+  z-index: 2;
+  background: #fff;
+  height: 40px;
+}
+
+.header .content .r .a-hover .ahovera i {
+  color: #666;
+  background: #fff;
+  border: none;
+}
+
+.header .content .r .a-hover .ahovera span {
+  border: none;
+}
+
+.header .content .r .a-hover .cart-morehover {
   display: block;
+  margin-right: -1px;
+  z-index: -1;
 }
 
 .nav {

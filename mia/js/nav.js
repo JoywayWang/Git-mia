@@ -1,56 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mia</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./font_rjcakrpnzd/iconfont.css">
-    <script src="./js/jquery-3.4.1.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/nav.js"></script>
-</head>
-
-<body>
-    <!-- <div class="mia">
-        <div class="top">
-            <div class="content">
-                <a class="a-souji fl" href="#">
-                    <i class="iconfont icon-shouji"></i><span>手机蜜芽</span>
-                </a>
-                    <a class="fr" href="#">帮助中心</a>
-                    <a class="fr" href="#">免费注册</a>
-                    <em class="fr">|</em>
-                    <a class="fr" href="#">登录</a><span
-                    class="fr">你好，欢迎来到蜜芽！</span>
-               
-             </div>
-        </div>
-        <header class="header">
-            <div class="content"><a class="logo" href="#"><img
-                        src="https://img.miyabaobei.com/d1/p4/2016/11/15/6e/92/6e9213dbef73af424807b48100a7933a745368439.png"
-                        alt=""></a>
-                <div class="r">
-                    <div class="search">
-                        <div class="Nsearch"><input class="N_a" type="text" placeholder="兔头妈妈甄选"><input class="N_b"
-                                type="button" value="搜索">
-                            <div class="lenovoWord"></div>
-                        </div>
-                        <p class="hot"><a href="#">沛多力DHA</a></p>
-                    </div>
-                    <div class="cart"><a><i class="iconfont icon-ai-cart"></i><span>购物车</span></a>
-                        <div class="cart-more">
-                            <div>购物车还没有商品，快去选购吧！</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <nav class="nav">
+class Nav {
+    constructor(root = "body") {
+        this.root = root;
+    }
+    init() {
+        this.creEle();
+    }
+    creEle() {
+        let html = `<nav class="nav">
             <div class="content">
                 <div class="nav-box">
                     <h3>全部商品分裂</h3>
@@ -215,20 +171,7 @@
                     <li><a class="fl" href="#">奶粉</a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="banner">
-        </div>
-        <div class="pinpai"></div>
-        <div class="tuijianlist">
-            <div class="content"></div>
-        </div>
-        <div class="dapailist">
-            <div class="content"></div>
-        </div>
-        <footer class="footer">
-            <div class="content"></div>
-        </footer>
-    </div> -->
-</body>
-
-</html>
+        </nav>`
+        $(`<div class= "mia"></div>`).appendTo(this.root);
+    }
+}
