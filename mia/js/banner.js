@@ -5,7 +5,7 @@ class Banner {
     }
     init() {
         let self = this;
-        console.log(111)
+        // console.log(111)
         $(`
                <div class="swiper-container">
                 <div class="swiper-wrapper"></div>
