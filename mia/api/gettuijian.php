@@ -5,7 +5,7 @@
     // $data = mysqli_fetch_all($result, MYSQLI_NUM);
     // echo json_encode($data,true);
 
-    $sql=" select * from tab "; 
+    $sql=" select * from tuijian "; 
      $result=$con->query($sql); 
      //得到数组 
      $row = $result->fetch_all(MYSQLI_ASSOC); 

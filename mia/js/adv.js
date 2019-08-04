@@ -22,24 +22,18 @@ class Adv {
             </ul>
             <div class="side-top"><a href ="#back"><i></i></a></div>
         </div>`;
-        $(`<div class= "nav">${html}</div>`).appendTo(this.root);
+        $(`<div class= "adv">${html}</div>`).appendTo(this.root);
     }
     addeve() {
         $(".navlist").find("li").eq(2).hover(function () {
-            console.log(1231);
-            // $(".wx-f").addClass("wxfactive");
+            $(".wx-f").addClass("wxfactive");
             $(".wx-f").animate({
-                position: "absolute",
-                width: "157px",
-                height: "193px",
-                bottom: "1px",
-                background: "url(../ img / wxf.png) no - repeat",
-                display: "block",
-                right: "30px"
+                right: "50px"
             }, 1000);
 
         }, function () {
-            // out
+            $(".wx-f").removeClass("wxfactive");
+            $(".wx-f").css("right", "97px");
         }
         );
     }

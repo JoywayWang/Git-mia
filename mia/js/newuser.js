@@ -8,8 +8,6 @@ class Newuser {
         this.addEve();
     }
     creEle() {
-        console.log(111);
-
         $(`<div class="content"><a href="##"><img src="${this.data}" alt=""></a></div>`).appendTo(this.root)
     }
     addEve() {

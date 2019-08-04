@@ -974,7 +974,7 @@ body {
   color: pink;
 }
 
-.nav .navleft {
+.adv .navleft {
   z-index: 99;
   position: fixed;
   left: 0;
@@ -982,7 +982,7 @@ body {
   transform: translate(0, -50%);
 }
 
-.nav .navleft .leftimg2 {
+.adv .navleft .leftimg2 {
   position: absolute;
   width: 88px;
   height: 88px;
@@ -990,7 +990,7 @@ body {
   left: 6px;
 }
 
-.nav .navright {
+.adv .navright {
   z-index: 99;
   position: fixed;
   right: 0;
@@ -998,7 +998,7 @@ body {
   transform: translate(0, -50%);
 }
 
-.nav .navright .navlist ul {
+.adv .navright .navlist ul {
   border-radius: 5px 5px 0 0;
   width: 52px;
   border: 1px solid #e6e6e6;
@@ -1007,24 +1007,26 @@ body {
   font-size: 12px;
 }
 
-.nav .navright .navlist ul li:first-child {
+.adv .navright .navlist ul li:first-child {
   border-radius: 5px 5px 0 0;
   overflow: hidden;
 }
 
-.nav .navright .navlist ul li {
+.adv .navright .navlist ul li {
   padding: 7px 0 2px 0;
   border-bottom: 1px solid #e6e6e6;
   cursor: pointer;
   position: relative;
 }
 
-.nav .navright .navlist ul li a {
+.adv .navright .navlist ul li a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: #666;
 }
 
-.nav .navright .navlist ul li i {
+.adv .navright .navlist ul li i {
   display: block;
   margin: 0 auto;
   width: 28px;
@@ -1034,7 +1036,7 @@ body {
   color: #fa4b9b;
 }
 
-.nav .navright .navlist ul li .wx-f {
+.adv .navright .navlist ul li .wx-f {
   display: none;
   position: absolute;
   width: 157px;
@@ -1044,7 +1046,11 @@ body {
   background: url(../img/wxf.png) no-repeat;
 }
 
-.nav .navright .navlist .side-top {
+.adv .navright .navlist ul li .wxfactive {
+  display: block;
+}
+
+.adv .navright .navlist .side-top {
   border-radius: 0 0 5px 5px;
   position: relative;
   margin-top: -2px;
@@ -1053,7 +1059,14 @@ body {
   cursor: pointer;
 }
 
-.nav .navright .navlist .side-top a i {
+.adv .navright .navlist .side-top a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 14px;
+}
+
+.adv .navright .navlist .side-top a i {
   position: absolute;
   top: 50%;
   left: 50%;
