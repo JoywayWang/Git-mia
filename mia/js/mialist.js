@@ -118,7 +118,15 @@ $(function () {
             })
         }).then(function () {
             return new Promise(function (resolve, reject) {
-
+                $.ajax({
+                    type: "post",
+                    url: "../api/getSelectlist.php",
+                    // data: "data",
+                    dataType: "json",
+                    success: function (response) {
+                        console.log(response);
+                    }
+                });
                 $.getJSON("../serverside/selectlist.json",
                     function (data) {
                         data = data[6];

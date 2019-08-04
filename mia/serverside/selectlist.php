@@ -19,16 +19,32 @@
     //     $sql = "INSERT INTO `mia`.`selectlist` (`seid`, `setext`) VALUES ('$i', '$text')";
     //     mysqli_query($con,$sql);
     // };
-    
+    // ----
+    // $data = file_get_contents("selectlist.json");
+    // $arr = json_decode($data,true);
+ 
+    // for($i = 0;$i<count($arr);$i++){
+    //     $text = json_encode($arr[$i]);
+    //     $sql = "INSERT INTO `mia`.`selectlist` (`seid`, `setext`) VALUES ('$i', '$text')";
+
+    //     echo $sql . PHP_EOL .  PHP_EOL;
+    // };
+    // ----
+    $con = mysqli_connect("127.0.0.1","root","","mia");
+
     $data = file_get_contents("selectlist.json");
     $arr = json_decode($data,true);
- 
+    
     for($i = 0;$i<count($arr);$i++){
-        $text = json_encode($arr[$i]);
-        $sql = "INSERT INTO `mia`.`selectlist` (`seid`, `setext`) VALUES ('$i', '$text')";
+        $text = addslashes(json_encode($arr[$i]));
+        $sql = "INSERT INTO `selectlist` (`seid`, `setext`) VALUES ('$i', '$text')";
 
-        echo $sql . PHP_EOL .  PHP_EOL;
+        if($con->query($sql)){
+         echo "succeed!" . PHP_EOL;
+        }else{
+         echo "failure: " . PHP_EOL . mysqli_error($con); 
+         //echo $text . PHP_EOL;
+        }
     };
     
-
 ?>
