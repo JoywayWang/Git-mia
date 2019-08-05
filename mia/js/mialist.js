@@ -22,23 +22,26 @@ class Mialist {
     }
 };
 class Listn {
-    constructor() {
+    constructor(index) {
         this.data = "";
         this.orderType = 0;
         this.html = "";
+        this.index = index;
     }
     init() {
         this.sendAjax(0);
         this.addEve();
+        this.addclick();
+        // console.log(this.index);
     }
     creEle() {
         this.html = this.data.map(ele => {
             return `<div class="product-item">
-                        <a target="_blank"><img class="item-img" src=${ele.src}> </a>
+                        <a href="##" id="${ele.gid}"><img class="item-img" src=${ele.src}> </a>
                         <div class="item-info">
                             <span class="priceA">￥${ele.sale_price}</span>
                             <span class="priceB">￥${ele.original_price}</span>
-                            <div class="item-info-name"><a href="">${ele.title}</a></div>
+                            <div class="item-info-name"><a href="##">${ele.title}</a></div>
                             <div class="tahoma_active"><span class="active-type">${ele.active_type}</span><span
                                     class="active-text"></span>${ele.active_text}</div>
                         </div>
@@ -48,10 +51,10 @@ class Listn {
     }
     sendAjax(page) {
         let self = this;
-        // let page = 0;
+
         $.ajax({
             type: "post",
-            url: "../api/getDataList.php",
+            url: `../api/getDataList${self.index}.php`,
             data: `page=${page}&orderType=${self.orderType}`,
             dataType: "json",
             success: function (response) {
@@ -63,12 +66,15 @@ class Listn {
     }
     addEve() {
         let that = this;
+        window.localStorage.setItem("page", 0);
         $.ajax({
             type: "post",
-            url: "../api/getPageCount.php",
+            url: `../api/getPageCount${that.index}.php`,
             dataType: "json",
             success: function (response) {
                 let pageSize = response;
+                // window.localStorage.setItem("page", index);
+
                 that.html = '';
                 for (let i = 0; i < pageSize; i++) {
                     $("#page").append(`<a href="javascript:;">${i + 1}</a>`)
@@ -78,15 +84,26 @@ class Listn {
         });
 
         $("#page").on("click", "a", function () {
-            console.log(23);
+            // console.log(23);
             var index = $(this).index();
             $(this).addClass("active").siblings().removeClass("active");
+            window.localStorage.setItem("page", index);
             that.sendAjax(index);
         })
 
         $("#nav li").click(function () {
             that.orderType = $(this).index();
+            window.localStorage.setItem("oT", that.orderType);
+
             that.sendAjax(0);
+        })
+    }
+    addclick() {
+        $("#app").on("click", ".product-item", function () {
+            let gid = Number($(this).children("a").attr("id"));
+            console.log(gid);
+            window.localStorage.setItem("gid", gid);
+            window.open(`http://127.0.0.1/code/mia/Gitmia/mia/html/details.html`, "_blank");
         })
     }
 };
@@ -109,7 +126,6 @@ $(function () {
                         $(".nav-tab").css("display", "none");
                         $(".nav-box").hover(function () {
                             $(".nav-tab").css("display", "block");
-
                         }, function () {
                             $(".nav-tab").css("display", "none");
                         }
@@ -124,20 +140,20 @@ $(function () {
                     // data: "data",
                     dataType: "json",
                     success: function (response) {
-                        console.log(response);
+                        // console.log(response);
+                        let a = response[localStorage.i];
+                        let b = a.setext;
+                        let dataa = JSON.parse(b);
+                        (new Selectlist(dataa, ".selectlist")).init();
                     }
                 });
-                $.getJSON("../serverside/selectlist.json",
-                    function (data) {
-                        data = data[6];
-                        (new Selectlist(data, ".selectlist")).init();
-                    }
-                );
+
                 resolve();
             })
         }).then(function () {
             return new Promise(function (resolve, reject) {
-                (new Listn()).init();
+                // console.log(localStorage.i);
+                (new Listn(localStorage.i)).init();
                 resolve();
             })
         }).then(function () {
@@ -149,7 +165,6 @@ $(function () {
         .then(function () {
             return new Promise(function (resolve, reject) {
                 (new Adv("body")).init();
-
                 resolve();
             })
         })

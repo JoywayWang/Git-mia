@@ -3,7 +3,7 @@
 $con = mysqli_connect("127.0.0.1", "root", "", "mia");
 
 # 查询数据库中商品的总数量(103)
-$sql = "SELECT * FROM goods";
+$sql = "SELECT * FROM good4";
 $result = mysqli_query($con, $sql);
 $ListCount = mysqli_num_rows($result);
 

@@ -9,13 +9,13 @@ $typeOrder = $_REQUEST["orderType"];
 if($typeOrder == 0)
 {
   # 获取所有的商品信息
-  $sql = "SELECT * FROM `goods` order by `gid` limit $page , 20";
+  $sql = "SELECT * FROM `good1` order by `gid` limit $page , 20";
 }else if($typeOrder == 1)
 {
-  $sql = "SELECT * FROM `goods` ORDER BY `goods`.`sale_price` DESC limit $page , 20";
+  $sql = "SELECT * FROM `good1` ORDER BY `good1`.`sale_price` DESC limit $page , 20";
 }else if($typeOrder == 2)
 {
-  $sql = "SELECT * FROM `goods` ORDER BY `goods`.`sale_price` ASC limit $page , 20";
+  $sql = "SELECT * FROM `good1` ORDER BY `good1`.`sale_price` ASC limit $page , 20";
 }
 
 

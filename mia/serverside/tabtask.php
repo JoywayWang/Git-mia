@@ -15,7 +15,7 @@
         }
     }
     for($i = 0;$i<count($arr);$i++){
-        $title = $arr[$i]["title"];
+        $title =  $arr[$i]["title"];
         $left =  Json_encodeOne($arr[$i]["left"]);
         $text = Json_encodeOne($arr[$i]["text"]);
         $right = Json_encodeOne($arr[$i]["right"]);

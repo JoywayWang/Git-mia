@@ -779,6 +779,10 @@ body {
   font-style: normal;
 }
 
+.footer {
+  clear: both;
+}
+
 .footer .content .foottop {
   text-align: center;
   border-top: 1px solid #dfdfdf;

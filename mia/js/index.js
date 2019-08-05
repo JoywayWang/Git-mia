@@ -47,9 +47,9 @@ $(function () {
                                 }
                             }
                             return o
-                        })
-                            // console.log(newdata);
-                            (new Nav(newdata, ".nav")).init();
+                        });
+                        // console.log(newdata);
+                        (new Nav(newdata, ".nav")).init();
                         resolve();
                     }
                 });

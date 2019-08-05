@@ -6,6 +6,7 @@ class Nav {
     init() {
         this.creEle();
         this.addEvent();
+        this.addClick();
     }
     creEle() {
         let html5 = this.data.map(function (e, i) {
@@ -26,6 +27,7 @@ class Nav {
             let html4 = Array.from(d).map((c) => {
                 return `<a href="#"><img src = "${c}"></a>`;
             }).join("");
+            // console.log(e)
             return ` <li><dl><dt><strong><a href="#">${e.title}</a></strong>
                     <p>${html1}</p></dt>
                                 <dd>
@@ -82,5 +84,27 @@ class Nav {
         })
         $(".nav-list li").eq(0).children("a").addClass("liactive");
 
+    }
+    addClick() {
+        $(".nav-tab").on("click", "li", function () {
+            // console.log($(this).index());
+            window.localStorage.setItem("i", $(this).index());
+            window.open(`http://127.0.0.1/code/mia/Gitmia/mia/html/miaList.html`, "_self");
+        });
+        $(".nav-list").on("click", "li", function () {
+            let a = $(this).index();
+            if (a == 0) {
+                window.open(`http://127.0.0.1/code/mia/Gitmia/mia/miaindex.html`, "_self");
+            }
+            else if (a == 1 || a == 2) {
+                window.localStorage.setItem("i", 0);
+                window.open(`http://127.0.0.1/code/mia/Gitmia/mia/html/miaList.html`, "_self");
+            }
+            else if (a > 2 && a < 7) {
+                window.localStorage.setItem("i", 6);
+                window.open(`http://127.0.0.1/code/mia/Gitmia/mia/html/miaList.html`, "_self");
+
+            }
+        });
     }
 }

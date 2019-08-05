@@ -50,6 +50,8 @@ class Header {
             $(this).children("div").removeClass("cart-morehover");
         }
 
-        )
+        ); $(".logo").click(function () {
+            window.open(`http://127.0.0.1/code/mia/Gitmia/mia/miaindex.html`, "_self");
+        })
     }
 }

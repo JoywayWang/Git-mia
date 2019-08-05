@@ -1,0 +1,490 @@
+.details {
+    width: 100%;
+    background: #fff;
+
+    .content {
+        width: 1100px;
+        margin: auto;
+
+        p {
+            a {
+                color: #666;
+                line-height: 50px;
+                font-size: 12px;
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 50px;
+                color: #666;
+            }
+        }
+
+        .dedl {
+            dt {
+                width: 402px;
+                float: left;
+
+                .debig {
+                    height: 400px;
+                    border: 1px solid #f7f7f7;
+
+                    img {
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
+
+                .delit {
+                    height: 100px;
+                    padding-top: 8px;
+
+                    img {
+                        width: 68px;
+                        height: 68px;
+                        padding: 2px;
+                        border: 1px solid #f4f4f4;
+                        float: left;
+                        margin-right: 8px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+
+            dd {
+                float: left;
+                width: 600px;
+
+                .detop {
+                    font-size: 14px;
+                    // font-family: \5FAE\8F6F\96C5\9ED1;
+                    color: #666;
+
+                    .logo_cun {
+                        width: 22px;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+
+                    span,
+                    i {
+                        color: #999;
+                        font-size: 14px
+                    }
+
+                }
+
+                .demid {
+                    font-size: 18px !important;
+                    color: #222 !important;
+                    padding-right: 40px;
+
+                    .baoyou {
+                        color: #ff3b93;
+                    }
+
+                    a {
+                        color: #666;
+                    }
+
+                    div {
+                        width: auto;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #666
+                    }
+                }
+
+                .price_box {
+                    background: #fff9fd;
+                    padding: 10px 15px;
+                    // font-family: Verdana, Geneva, sans-serif;
+                    color: #666;
+
+                    .price_info {
+                        color: #666;
+                        margin-bottom: 10px;
+                        // background: #58a;
+
+
+                        .tit_txt {
+                            font-size: 16px;
+                            color: #666;
+                            margin-right: 30px;
+                            // background: #58a;
+
+
+                        }
+
+                        .pbox_price {
+                            font-size: 22px;
+                            color: #f43499;
+                            display: inline-block;
+                            // background: #58a;
+
+                            .pbox_yen {
+                                font-size: 20px;
+                                color: #f43499;
+                            }
+
+                            em {
+                                color: #f43499;
+                            }
+
+                        }
+
+                        .pbox_market {
+                            padding: 0 20px 0 10px;
+
+                            span {
+                                color: gray;
+                                font-size: 12px;
+                            }
+
+                            del {
+                                font-size: 14px;
+
+                                color: #666;
+                            }
+
+
+                        }
+
+                        .jks {
+                            font-size: 12px;
+                            color: #999;
+                            cursor: pointer;
+                            background: url(https://img.miyabaobei.com/d1/p5/2016/07/04/06/87/0687eac3bbfba9529050d1f730a3774d197912014.png) no-repeat -3px center;
+                            width: 55px;
+                            display: inline-block;
+                            text-align: right;
+
+                            .layer_shui {
+                                padding: 10px 20px;
+                                position: absolute;
+                                top: 60px;
+                                left: 357px;
+                                background: #fff;
+                                border: 1px solid #ccc;
+                                visibility: hidden;
+                                text-align: left;
+                                line-height: 20px;
+                                z-index: 10;
+                            }
+                        }
+                    }
+
+                    .tit_txt {
+                        font-size: 16px;
+                        color: #666;
+                        margin-right: 30px;
+                    }
+
+                    a {
+                        display: inline-block;
+
+                        .markwarp {
+                            font-size: 12px;
+                            color: #ff3b93;
+                            line-height: 20px;
+                            width: 350px;
+
+                            margin-bottom: 10px;
+
+                            .mark-manzeng {
+                                display: inline-block;
+                                height: 21px;
+                                padding: 0 5px;
+                                text-align: center;
+                                vertical-align: middle;
+                                color: #fff;
+                                margin-right: 8px;
+                                background-color: #fca43b;
+                            }
+
+                            .mark-tejia {
+                                display: inline-block;
+                                height: 21px;
+                                padding: 0 5px;
+                                text-align: center;
+                                vertical-align: middle;
+                                color: #fff;
+                                margin-right: 8px;
+                                background-color: #fc6c80;
+                            }
+                        }
+
+                    }
+
+                    a:last-child {
+                        padding-left: 67px;
+                    }
+
+                }
+
+                .taozhuang,
+                .suliang {
+                    padding: 16px 1px;
+                    position: relative;
+                    height: 30px;
+                    margin: -1px 0;
+
+                    dt {
+                        font-size: 16px;
+                        color: #666;
+                        margin-right: 30px;
+                        // display: inline-block;
+                        float: left;
+                        font-size: 16px;
+                        width: auto;
+                        padding-left: 15px;
+                        width: 70px;
+                        text-align: left;
+
+                    }
+
+                    dd {
+                        // display: inline-block;
+                        float: left;
+                        overflow: hidden;
+                        width: 475px;
+
+                        span {
+                            float: left;
+                            border: 1px solid #b5b5b5;
+                            color: #333;
+                            line-height: 1;
+                            padding: 8px 10px;
+                            position: relative;
+                            margin-right: 10px;
+                            margin-bottom: 5px;
+                            cursor: pointer;
+                            overflow: hidden;
+                            box-sizing: border-box;
+                            font-size: 12px;
+                        }
+
+                        .active::after {
+                            content: "";
+                            background: url(https://img.miyabaobei.com/d1/p6/2018/12/21/c6/94/c694cf9….png) no-repeat;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            width: 17px;
+                            height: 16px;
+                            display: inline-block;
+                            z-index: 22;
+                        }
+
+
+                    }
+
+                    .num_box {
+                        float: left;
+                        position: relative;
+                        height: 28px;
+                        // border: 1px solid #b3b3b3;
+                        font-size: 12px;
+                        font-family: Verdana, Geneva, sans-serif;
+                        color: #666;
+
+                        .num_f {
+                            background-position: 0 -150px;
+                            cursor: default;
+                            float: left;
+                            width: 24px;
+                            height: 28px;
+                            line-height: 26px;
+                            font-weight: bold;
+                            text-align: center;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .num_r {
+                            background-position: -50px -150px;
+                            cursor: pointer;
+                            float: left;
+                            width: 24px;
+                            height: 28px;
+                            line-height: 26px;
+                            font-weight: bold;
+                            text-align: center;
+                            padding: 0;
+                            margin: 0;
+
+                        }
+
+                        .num_c {
+                            text-align: center;
+                            line-height: 26px;
+                            width: 26px;
+                            background-color: #fff;
+                            float: left;
+                            width: 24px;
+                            height: 26px;
+                            font-size: 12px;
+                            font-family: Verdana, Geneva, sans-serif;
+                            color: #666;
+                            border-top: 1px solid #b5b5b5;
+                            border-bottom: 1px solid #b5b5b5;
+
+
+                        }
+                    }
+                }
+
+                .dabtn {
+                    margin-bottom: 10px;
+
+                    .button_f {
+                        width: 225px;
+                        float: left;
+                        height: 55px;
+                        padding: 0;
+                        line-height: 55px;
+                        font-size: 18px;
+                        font-weight: normal;
+                        color: #fff;
+                        background-color: #F450A2;
+                        border-radius: 2px;
+                        // display: inline-block;
+                        text-align: center;
+                        border-radius: 10px;
+
+                        a {
+                            color: #fff;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                            color: #fff;
+                            text-align: center;
+                        }
+
+                    }
+
+                    .button_g {
+                        border-radius: 10px;
+                        margin-left: 12px;
+                        height: 55px;
+                        width: 102px;
+                        font-size: 18px;
+                        float: left;
+                        // padding: 2px 12px 5px 0;
+                        position: relative;
+                        background: #fff;
+                        border: 1px solid #e2e2e2;
+                        font-weight: normal;
+                        box-sizing: border-box;
+                        text-align: center;
+
+                        i {
+                            width: 100px;
+                            height: 18px;
+                            display: block;
+                            text-align: center;
+                            margin-top: 8px;
+                            font-size: 18px;
+                            font-weight: 900;
+                        }
+
+                        a {
+                            color: #fff;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            font-size: 14px;
+                            color: #666;
+                        }
+                    }
+                }
+
+                .other {
+                    margin-bottom: 10px;
+
+                    dt {
+                        float: left;
+                        font-size: 12px;
+                        width: 46px;
+                        text-align: left;
+                        color: gray;
+                        line-height: 25px;
+                        width: 46px;
+                    }
+
+                    dd {
+                        width: 300px;
+                        float: left;
+                        text-align: left;
+                        height: 25px;
+                        line-height: 25px;
+                        // text-align: right;
+                        font-size: 12px;
+                        color: gray;
+                    }
+                }
+
+                .obtom {
+                    color: #999;
+                    margin-bottom: 10px;
+
+                    ul {
+                        padding-left: 14px;
+
+                        li {
+                            font-size: 12px;
+                            float: left;
+                            list-style: disc;
+                            // padding-left: 10px;
+                            margin-right: 25px;
+                            position: relative;
+                            cursor: pointer;
+                            text-indent: -9px;
+
+                            span {
+                                display: none;
+                                left: 0px;
+                                top: 40px;
+                                width: 270px;
+                                padding: 10px 20px;
+                                position: absolute;
+                                top: 60px;
+                                left: 357px;
+                                background: #fff;
+                                border: 1px solid #ccc;
+                                visibility: hidden;
+                                text-align: left;
+                                line-height: 20px;
+                                z-index: 10;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.jmg {
+    width: 100%;
+    background: #fff;
+    background-image: url(../img/cline.png);
+    background-position: left top;
+    background-repeat: repeat-x;
+
+    .content {
+        width: 1100px;
+        margin: auto;
+
+        .w860 {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 840px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
