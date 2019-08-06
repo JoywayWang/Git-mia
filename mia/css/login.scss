@@ -1,0 +1,279 @@
+.clearfix:after {
+    content: "";
+    height: 0;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.login {
+    padding-top: 75px;
+    background: url(https://img.miyabaobei.com/other/14818105826269.jpg) no-repeat left 112px;
+    margin: auto;
+    height: 502px;
+    margin-top: 20px;
+    width: 965px;
+    position: relative;
+
+    .loginlogo {
+        background: url(https://img.miyabaobei.com/d1/p5/2016/11/15/6e/92/6e9213dbef73af424807b48100a7933a762928174.png) no-repeat 0 0;
+        width: 210px;
+        height: 100px;
+        display: block;
+        overflow: hidden;
+        text-indent: -999px;
+    }
+
+    .logincontent {
+        position: absolute;
+        left: 610px;
+        top: 92px;
+        width: 304px;
+        box-shadow: 0 0 4px rgba(160, 43, 43, 0.075);
+        padding: 0px 20px 20px 20px;
+        font-size: 12px;
+        font-family: Verdana, Geneva, sans-serif;
+        color: #666;
+
+        .login_t {
+            width: 100%;
+            height: 60px;
+
+            h3 {
+                color: #f450a2;
+                font-size: 20px;
+                float: left;
+                height: 60px;
+                line-height: 60px;
+            }
+        }
+
+        .login_m {
+            width: 100%;
+            height: 150px;
+            position: relative;
+
+            .login_ml {
+                position: absolute;
+                left: 0;
+                width: 50px;
+                height: 100%;
+                text-align: right;
+                padding: 0 5px;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                    color: #f450a2;
+
+
+                }
+            }
+
+            .login_mr {
+                position: absolute;
+                left: 60px;
+                right: 0;
+                height: 100%;
+
+                .divforinput {
+                    width: 100%;
+                    height: 50px;
+
+                    input {
+                        height: 30px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        width: 100%;
+                        background-color: #FFF;
+                        border: 1px solid #CFCFCF;
+                        box-shadow: 0 0 2px 1px rgba(207, 207, 207, .4) inset;
+
+                    }
+
+                    .input2 {
+                        height: 30px;
+                        box-sizing: border-box;
+                        display: block;
+                        float: left;
+                        width: 50%;
+                        background-color: #FFF;
+                        border: 1px solid #CFCFCF;
+                        box-shadow: 0 0 2px 1px rgba(207, 207, 207, .4) inset;
+                    }
+
+
+
+                    p {
+                        width: 100%;
+                        height: 11px;
+                        text-indent: 10px;
+                        color: #f450a2;
+                    }
+                }
+            }
+
+        }
+
+        .sign_m {
+            width: 100%;
+            height: 250px;
+            position: relative;
+
+            .login_ml {
+                position: absolute;
+                left: 0;
+                width: 75px;
+                height: 100%;
+                text-align: right;
+                padding: 0 5px;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                    color: #f450a2;
+                    padding-right: 10px;
+                    box-sizing: border-box;
+
+
+                }
+            }
+
+            .login_mr {
+                position: absolute;
+                left: 75px;
+                right: 0;
+                height: 100%;
+
+                .divforinput {
+                    width: 100%;
+                    height: 50px;
+
+                    input {
+                        height: 30px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        width: 100%;
+                        background-color: #FFF;
+                        border: 1px solid #CFCFCF;
+                        box-shadow: 0 0 2px 1px rgba(207, 207, 207, .4) inset;
+
+                    }
+
+                    .input2 {
+                        height: 30px;
+                        box-sizing: border-box;
+                        display: block;
+                        float: left;
+                        width: 50%;
+                        background-color: #FFF;
+                        border: 1px solid #CFCFCF;
+                        box-shadow: 0 0 2px 1px rgba(207, 207, 207, .4) inset;
+                    }
+
+                    span {
+                        height: 30px;
+                        display: block;
+                        float: left;
+                        box-sizing: 30px;
+                        width: 50%;
+                        background: #0f0;
+                    }
+
+                    p {
+                        width: 100%;
+                        height: 11px;
+                        text-indent: 10px;
+                        color: #f450a2;
+                    }
+                }
+            }
+
+        }
+
+        button {
+            background-color: #f450a2;
+            border-radius: 2px;
+            display: inline-block;
+            width: 255px;
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+            /* margin: auto; */
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .login_b {
+            width: 100%;
+            height: 30px;
+            padding-top: 15px;
+
+            p {
+                width: 100%;
+                color: #066666;
+                float: left;
+                padding-top: 6px;
+                font-size: 12px;
+            }
+
+            a {
+                float: left;
+                display: block;
+                width: 24px;
+                height: 24px;
+                overflow: hidden;
+                margin-right: 8px;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+            }
+
+            .login_wx {
+                background-image: url(../img/login_wx.jpg);
+            }
+
+            .login_sina {
+                background-image: url(../img/login_sina.jpg);
+            }
+
+            .login2sign,
+            .sign2login {
+                padding-top: 3px;
+                float: right;
+                display: block;
+                height: 24px;
+                width: 100px;
+                line-height: 24px;
+                font-size: 12px;
+                color: #f450a2;
+                border-radius: 0;
+            }
+
+        }
+    }
+
+    .logintext {
+        width: 900px;
+        padding-top: 20px;
+        text-align: center;
+        padding: 30px;
+        line-height: 22px;
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+        color: #ccc;
+        margin: auto;
+        text-align: center;
+    }
+}
