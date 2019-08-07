@@ -32,8 +32,33 @@
 }
 
 .details .content .dedl dt .debig img {
+  display: none;
   width: 400px;
   height: 400px;
+}
+
+.details .content .dedl dt .debig .imgh0 {
+  opacity: 1;
+}
+
+.details .content .dedl dt .debig .imgh1 {
+  opacity: .5;
+}
+
+.details .content .dedl dt .debig .imgh2 {
+  opacity: 1;
+}
+
+.details .content .dedl dt .debig .imgh3 {
+  opacity: .5;
+}
+
+.details .content .dedl dt .debig .imgh4 {
+  opacity: 1;
+}
+
+.details .content .dedl dt .debig .imgh {
+  display: block;
 }
 
 .details .content .dedl dt .delit {
@@ -49,6 +74,30 @@
   float: left;
   margin-right: 8px;
   box-sizing: border-box;
+}
+
+.details .content .dedl dt .delit .imgh0 {
+  opacity: 1;
+}
+
+.details .content .dedl dt .delit .imgh1 {
+  opacity: .5;
+}
+
+.details .content .dedl dt .delit .imgh2 {
+  opacity: 1;
+}
+
+.details .content .dedl dt .delit .imgh3 {
+  opacity: .5;
+}
+
+.details .content .dedl dt .delit .imgh4 {
+  opacity: 1;
+}
+
+.details .content .dedl dt .delit img:hover {
+  border: 1px solid #f00;
 }
 
 .details .content .dedl dd {

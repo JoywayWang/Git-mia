@@ -17,6 +17,8 @@ class Details {
     init() {
         this.creEle();
         this.addClick();
+        this.addHover();
+        this.addEveforbtn();
     }
     creEle() {
         $(`<div class="details">
@@ -29,14 +31,19 @@ class Details {
             </p>
             <dl class="dedl">
                 <dt>
-                    <div class="debig"><img src="${this.data.src}" alt="">
+                    <div class="debig">
+                    <img class="imgh0" src="${this.data.src}" alt="">
+                    <img class="imgh1" src="${this.data.src}" alt="">
+                    <img class="imgh2" src="${this.data.src}" alt="">
+                    <img class="imgh3" src="${this.data.src}" alt="">
+                    <img class="imgh4" src="${this.data.src}" alt="">
                     </div>
                     <div class="delit">
-                    <imgsrc="${this.data.src}" alt="">
-                    <imgsrc="${this.data.src}" alt="">
-                    <imgsrc="${this.data.src}" alt="">
-                    <imgsrc="${this.data.src}" alt="">
-                    <imgsrc="${this.data.src}" alt="">
+                    <img class="imgh0" src="${this.data.src}" alt="">
+                    <img class="imgh1" src="${this.data.src}" alt="">
+                    <img class="imgh2" src="${this.data.src}" alt="">
+                    <img class="imgh3" src="${this.data.src}" alt="">
+                    <img class="imgh4" src="${this.data.src}" alt="">
             </div>
                 </dt>
                 <dd>
@@ -124,6 +131,30 @@ class Details {
             window.open(`http://127.0.0.1/code/mia/Gitmia/mia/html/miaList.html`, "_self");
         })
     }
+    addHover() {
+        $(".debig img").eq(0).addClass("imgh")
+        console.log($(".debig img").eq(0));
+
+        $(".delit").on("mouseenter", "img", function () {
+            $(".debig img").eq($(this).index()).addClass("imgh").siblings().removeClass("imgh");
+        })
+    }
+    addEveforbtn() {
+        ` <dd class="num_box">
+                            <span class="num_f">-</span>
+                            <em class="num_c">1</em>
+                            <span class="num_r">+</span>
+                        </dd>`
+        $(".num_f").click(() => {
+            let text = $(".num_c").text() - 1;
+            text < 1 ? $(".num_c").text(1) : $(".num_c").text(text);
+        })
+        $(".num_r").click(() => {
+            let text = Number($(".num_c").text()) + 1;
+            text > 10 ? $(".num_c").text(10) : $(".num_c").text(text);
+        })
+
+    }
 }
 
 //加载页面
@@ -134,7 +165,9 @@ $(function () {
     })
         .then(function () {
             return new Promise(function (resolve, reject) {
-                (new Header(".toph")).init();
+                let a = Cookie.getItem("usn");
+                (new Header(".toph", a)).init();
+                // (new Header(".toph")).init();
                 resolve();
             })
         })

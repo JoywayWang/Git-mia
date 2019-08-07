@@ -115,7 +115,11 @@ $(function () {
     })
         .then(function () {
             return new Promise(function (resolve, reject) {
-                (new Header(".toph")).init();
+                let a = Cookie.getItem("usn");
+                console.log(a);
+
+                (new Header(".toph", a)).init();
+                // (new Header(".toph")).init();
                 resolve();
             })
         }).then(function () {

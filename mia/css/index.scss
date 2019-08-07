@@ -61,6 +61,14 @@ body {
             margin: 0 10px;
         }
 
+        .cospan1 {
+            display: none;
+        }
+
+        .cospan2 {
+            display: inline;
+        }
+
         em {
             color: #666;
         }
@@ -963,7 +971,6 @@ body {
 
                             .right {
                                 float: left;
-                                display: inline;
                                 width: 76px;
                                 margin-left: 7px;
 

@@ -1,0 +1,67 @@
+.cart {
+    min-height: 240px;
+
+    .content {
+        .kong {
+            width: 700px;
+            margin: 30px auto;
+            // display: none;
+
+            i {
+                display: block;
+                float: left;
+                width: 100px;
+                height: 100px;
+                font-size: 100px;
+                color: dimgray;
+                margin-right: 20px;
+            }
+
+            h3 {
+                padding-top: 20px;
+                font-size: 30px;
+                color: dimgray;
+                margin-bottom: 20px;
+            }
+
+            p {
+                a {
+                    color: rgb(185, 37, 62);
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .cartlist {
+            h3 {
+                border-bottom: 2px solid #fa4b9b;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                color: #333;
+                font-size: 24px;
+
+            }
+
+            table {
+                thead {
+                    width: 100%;
+
+                    tr {
+                        overflow: hidden;
+                        background: #fff;
+                        padding: 15px;
+
+                        th {
+                            width: 114px;
+
+                            .cbox {
+                                border-radius: 50%;
+                                background: url(https://img.miyabaobei.com/d1/p3/2016/03/23/ff/27/ff2788474f897fc85df54920bb84816d.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

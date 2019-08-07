@@ -12,6 +12,7 @@ class Sign {
         this.getCaptcha();
         this.addBlur();
         this.addEveforbtn();
+        this.addclick();
 
     }
     creEle() {
@@ -83,7 +84,6 @@ class Sign {
         this.addEveforpsw2();
         this.addEveforyzm($("#yzm"), "验证码");
     }
-
     addEveforblur1(ele, reg, name) {
         let self = this;
         let a = ele.blur(function () {
@@ -167,6 +167,7 @@ class Sign {
     }
     addEveforbtn() {
         $("button").click(() => {
+            let self = this
             if ((this.n1 + this.n2 + this.n3 + this.n4 + this.n5) == 5) {
                 $.ajax({
                     type: "post",
@@ -174,14 +175,14 @@ class Sign {
                     data: `usn=${this.usn.val().trim()}&psw=${this.psw.val().trim()}&pho=${this.pho.val().trim()}`,
                     dataType: "json",
                     success: function (response) {
-                        console.log(1334);
 
                         if (response.status == "success") {
-                            alert(response.msg)
-                            window.location.href = "http://127.0.0.1/code/mia/Gitmia/mia/html/login.html";
+                            alert(response.msg);
+                            Cookie.setItem("usn", self.usn.val().trim(), 1, '/');
+                            Cookie.setItem("new", 1, 1, '/');
+                            window.location.href = "../miaindex.html";
                         } else {
                             console.log(response.msg);
-
                             alert(response.msg);
                         }
                     }
@@ -190,6 +191,14 @@ class Sign {
             else {
                 alert("请完善信息")
             }
+        })
+    }
+    addclick() {
+        $(".sign2login").click(() => {
+            window.location.href = "../html/login.html";
+        })
+        $(".loginlogo").click(() => {
+            window.location.href = "../miaindex.html";
         })
     }
 

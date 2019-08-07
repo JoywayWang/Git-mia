@@ -26,7 +26,8 @@ $(function () {
     })
         .then(function () {
             return new Promise(function (resolve, reject) {
-                (new Header(".toph")).init();
+                let a = Cookie.getItem("usn");
+                (new Header(".toph", a)).init();
                 resolve();
             })
 
@@ -73,7 +74,10 @@ $(function () {
             return new Promise(function (resolve, reject) {
                 let data = "https://img.miyabaobei.com/d1/p5/2018/01/18/c3/57/c357db838165214d83c42c1543962c74448442151.jpg";
                 // console.log(33);
-                let a = new Newuser(data, ".newuser");
+                let n1 = Cookie.getItem("new");
+                console.log(n1);
+
+                let a = new Newuser(data, ".newuser", n1);
                 a.init();
                 ; resolve();
             })
@@ -106,3 +110,6 @@ $(function () {
             })
         })
 })
+
+
+

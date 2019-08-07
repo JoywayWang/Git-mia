@@ -8,11 +8,11 @@ let Cookie = {
             }
         }
     },
-    setItem(key, value, day) {
+    setItem(key, value, day, path) {
         if (day) {
             let date = new Date();
             date.setDate(date.getDate() + day);
-            document.cookie = key + "=" + value + ";expires=" + date;
+            document.cookie = key + "=" + value + ";expires=" + date + ";path=" + path;
         } else {
             document.cookie = key + "=" + value;
         }

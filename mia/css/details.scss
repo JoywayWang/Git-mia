@@ -30,9 +30,36 @@
                     border: 1px solid #f7f7f7;
 
                     img {
+                        display: none;
                         width: 400px;
                         height: 400px;
                     }
+
+                    .imgh0 {
+                        opacity: 1;
+                    }
+
+                    .imgh1 {
+                        opacity: .5;
+                    }
+
+                    .imgh2 {
+                        opacity: 1;
+                    }
+
+                    .imgh3 {
+                        opacity: .5;
+                    }
+
+                    .imgh4 {
+                        opacity: 1;
+                    }
+
+                    .imgh {
+                        display: block;
+                    }
+
+
                 }
 
                 .delit {
@@ -47,6 +74,31 @@
                         float: left;
                         margin-right: 8px;
                         box-sizing: border-box;
+                    }
+
+                    .imgh0 {
+                        opacity: 1;
+                    }
+
+                    .imgh1 {
+                        opacity: .5;
+                    }
+
+                    .imgh2 {
+                        opacity: 1;
+                    }
+
+                    .imgh3 {
+                        opacity: .5;
+                    }
+
+                    .imgh4 {
+                        opacity: 1;
+                    }
+
+                    img:hover {
+                        border: 1px solid #f00;
+
                     }
                 }
             }

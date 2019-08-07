@@ -10,6 +10,7 @@ class Login {
         this.getCaptcha();
         this.addBlur();
         this.addEveforbtn();
+        this.addclick();
 
     }
     creEle() {
@@ -44,7 +45,7 @@ class Login {
                 <p>使用以下账号登录：</p>
                 <a class="login_wx" href="jvascript:;" title="使用微信帐号登录"></a>
                 <a class="login_sina" href="jvascript:;" title="使用新浪微博帐号登录"></a>
-                <a class="login2sign" href="##">未注册？点击注册</a>
+                <a class="login2sign" href="###">未注册？点击注册</a>
             </div>
         </div>
         <div class="logintext">
@@ -70,7 +71,6 @@ class Login {
         this.addEveforblur2($("#psw"), this.pswreg, "密码");
         this.addEveforyzm($("#yzm"), "验证码");
     }
-
     addEveforblur1(ele, reg, name) {
         let self = this;
         let a = ele.blur(function () {
@@ -120,8 +120,8 @@ class Login {
             }
         })
     }
-
     addEveforbtn() {
+        let self = this;
         $("button").click(() => {
             if ((this.n1 + this.n2 + this.n3) == 3) {
                 $.ajax({
@@ -130,10 +130,10 @@ class Login {
                     data: `usn=${this.usn.val().trim()}&psw=${this.psw.val().trim()}`,
                     dataType: "json",
                     success: function (response) {
-                        console.log(1334);
 
                         if (response.status == "success") {
                             alert(response.msg)
+                            Cookie.setItem("usn", self.usn.val().trim(), 1, '/');
                             window.location.href = "../miaindex.html";
                         } else {
                             console.log(response.msg);
@@ -146,6 +146,14 @@ class Login {
             else {
                 alert("请完善信息")
             }
+        })
+    }
+    addclick() {
+        $(".login2sign").click(() => {
+            window.location.href = "../html/sign.html";
+        })
+        $(".loginlogo").click(() => {
+            window.location.href = "../miaindex.html";
         })
     }
 

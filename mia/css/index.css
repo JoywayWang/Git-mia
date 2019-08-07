@@ -58,6 +58,14 @@ body {
   margin: 0 10px;
 }
 
+.top .content .cospan1 {
+  display: none;
+}
+
+.top .content .cospan2 {
+  display: inline;
+}
+
 .top .content em {
   color: #666;
 }
@@ -861,7 +869,6 @@ body {
 
 .footer .content .footmid .fbox .f-r .f-ul li .right {
   float: left;
-  display: inline;
   width: 76px;
   margin-left: 7px;
 }
