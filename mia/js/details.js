@@ -19,6 +19,7 @@ class Details {
         this.addClick();
         this.addHover();
         this.addEveforbtn();
+        this.addclickforcart();
     }
     creEle() {
         $(`<div class="details">
@@ -31,7 +32,7 @@ class Details {
             </p>
             <dl class="dedl">
                 <dt>
-                    <div class="debig">
+                    <div class="debig class="zoomTarget"">
                     <img class="imgh0" src="${this.data.src}" alt="">
                     <img class="imgh1" src="${this.data.src}" alt="">
                     <img class="imgh2" src="${this.data.src}" alt="">
@@ -133,18 +134,13 @@ class Details {
     }
     addHover() {
         $(".debig img").eq(0).addClass("imgh")
-        console.log($(".debig img").eq(0));
+        // console.log($(".debig img").eq(0));
 
         $(".delit").on("mouseenter", "img", function () {
             $(".debig img").eq($(this).index()).addClass("imgh").siblings().removeClass("imgh");
         })
     }
     addEveforbtn() {
-        ` <dd class="num_box">
-                            <span class="num_f">-</span>
-                            <em class="num_c">1</em>
-                            <span class="num_r">+</span>
-                        </dd>`
         $(".num_f").click(() => {
             let text = $(".num_c").text() - 1;
             text < 1 ? $(".num_c").text(1) : $(".num_c").text(text);
@@ -154,6 +150,31 @@ class Details {
             text > 10 ? $(".num_c").text(10) : $(".num_c").text(text);
         })
 
+    }
+    addclickforcart() {
+        $(".btn_j").click(() => {
+            // console.log(this.data);
+            var gid = this.data.gid * 1;
+            var price = this.data.sale_price;
+            var num = $(".num_c").text();
+            var src = this.data.src;
+            var title = this.data.title;
+            var op = this.data.original_price;
+
+
+            $.ajax({
+                type: "get",
+                url: "../api/addCart.php",
+                data: `gid=${gid}&price=${price}&num=${num}&src=${src}&title=${title}&op=${op}`,
+                dataType: "json",
+                success: function (response) {
+                    console.log(response);
+                    var text = response["totalRow"];
+                    $(".gwcsl").html(text)
+
+                }
+            });
+        })
     }
 }
 
@@ -179,9 +200,10 @@ $(function () {
                     data: `page=${localStorage.page}&orderType=${localStorage.oT}`,
                     dataType: "json",
                     success: function (response) {
+                        // console.log(124567890);
                         var suju = "";
                         for (const i of response) {
-                            // console.log(i, localStorage.gid);
+                            // console.log( localStorage.gid, response);
                             if (i.gid == localStorage.gid) {
                                 suju = i;
                             }

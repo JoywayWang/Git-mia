@@ -11,9 +11,9 @@ class Mialist {
         <div class="nav"></div>
          <div class="selectlist clearfix"></div>
         <div id="nav">
-        <li>默认排序</li>
-        <li>售价排序(从高到低)</li>
-        <li>售价排序(从低到高)</li>
+        <li>人气</li>
+        <li>售价降序</li>
+        <li>售价升序</li>
         </div>
         <div id="app"></div>
         <div id="page" class="page"></div>

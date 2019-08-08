@@ -75,5 +75,8 @@ class Header {
         ); $(".logo").click(function () {
             window.open(`http://127.0.0.1/code/mia/Gitmia/mia/miaindex.html`, "_self");
         })
+            ; $(".cart").click(function () {
+                window.open("/code/mia/Gitmia/mia/html/cart.html", "_self");
+            })
     }
 }

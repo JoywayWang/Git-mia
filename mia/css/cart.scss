@@ -1,11 +1,12 @@
-.cart {
+.cart2 {
+    background: #fff;
     min-height: 240px;
 
     .content {
         .kong {
             width: 700px;
             margin: 30px auto;
-            // display: none;
+            display: none;
 
             i {
                 display: block;
@@ -22,6 +23,7 @@
                 font-size: 30px;
                 color: dimgray;
                 margin-bottom: 20px;
+                width: 980px;
             }
 
             p {
@@ -33,30 +35,291 @@
         }
 
         .cartlist {
+            width: 1000px;
+            margin: auto;
+
             h3 {
                 border-bottom: 2px solid #fa4b9b;
                 padding-bottom: 10px;
                 padding-right: 10px;
                 color: #333;
                 font-size: 24px;
+                margin: auto;
+
 
             }
 
             table {
+                width: 100%;
+
                 thead {
-                    width: 100%;
+
+                    display: block;
+                    width: 1000px;
+                    padding: 10px 0;
 
                     tr {
                         overflow: hidden;
                         background: #fff;
-                        padding: 15px;
 
                         th {
+                            display: inline-block;
                             width: 114px;
+                            line-height: 20px;
+                            height: 20px;
+                            font-size: 12px;
+                            border-right: 1px solid #ccc;
+                            box-sizing: border-box;
 
                             .cbox {
                                 border-radius: 50%;
                                 background: url(https://img.miyabaobei.com/d1/p3/2016/03/23/ff/27/ff2788474f897fc85df54920bb84816d.png);
+                                width: 23px;
+                                height: 22px;
+                                // background-position: 0 -176px;
+                                // background-position: 0 0px;
+                                background-repeat: no-repeat;
+                                display: inline-block;
+                                position: relative;
+
+                                input {
+                                    opacity: 0;
+                                    position: absolute;
+                                    width: 23px;
+                                    height: 22px;
+                                    top: 0;
+                                    left: 0;
+                                }
+                            }
+
+                            .cboxactive {
+                                background-position: 0 -176px;
+
+                            }
+
+                            label {
+                                position: relative;
+                                top: -6px;
+                            }
+                        }
+
+                        th:last-child {
+                            border-right: none;
+                        }
+
+                        th:first-child {
+                            border-right: none;
+                        }
+                    }
+                }
+
+                tbody {
+                    display: block;
+                    width: 1000px;
+                    padding: 10px 0;
+
+                    tr {
+                        display: block;
+                        padding: 5px 0;
+                        border-top: 1px solid #ccc;
+
+                        td {
+                            display: inline-block;
+                            width: 114px;
+                            line-height: 20px;
+                            height: 80px;
+                            font-size: 12px;
+                            box-sizing: border-box;
+
+                            .cbox {
+                                border-radius: 50%;
+                                background: url(https://img.miyabaobei.com/d1/p3/2016/03/23/ff/27/ff2788474f897fc85df54920bb84816d.png);
+                                width: 23px;
+                                height: 22px;
+                                // background-position: 0 -176px;
+                                // background-position: 0 0px;  
+                                background-repeat: no-repeat;
+                                display: inline-block;
+                                margin-left: 32px;
+                                margin-top: 30px;
+
+                                input {
+                                    opacity: 0;
+                                    position: absolute;
+                                    width: 23px;
+                                    height: 22px;
+                                    top: 0;
+                                    left: 0;
+                                }
+                            }
+
+                            .cboxactive {
+                                background-position: 0 -176px;
+
+                            }
+
+                            img {
+                                width: 77px;
+                                height: 77px;
+                                // border: 1px solid #f00;
+                                // box-shadow: 0 0 1px 1px #ccc;
+                                float: left;
+                                // margin-right: 10px;
+                            }
+
+                            p {
+                                color: #666;
+                                width: 234px;
+                                float: right;
+                            }
+
+                            i {
+                                text-align: center;
+                                display: block;
+                                width: 100%;
+                                font-size: 12px;
+                                color: #666;
+                                margin-bottom: 10px;
+                            }
+
+                            del {
+                                display: block;
+                                text-align: center;
+                                width: 100%;
+                                font-size: 12px;
+                                color: #999;
+                            }
+
+                            em {
+                                font-size: 12px;
+                                color: #666;
+                                display: inline-block;
+                                width: 100%;
+                                text-align: center;
+                            }
+
+                            .slbox {
+                                border: 1px solid #e2e2e2;
+                                height: 22px;
+                                width: 76px;
+                                margin: auto;
+
+                                .jian {
+                                    width: 22px;
+                                    height: 22px;
+                                    display: block;
+                                    cursor: pointer;
+                                    float: left;
+                                    border-right: 1px solid #e2e2e2;
+                                    text-align: center;
+                                    line-height: 22px;
+
+                                }
+
+                                .cartsuliang {
+                                    display: block;
+                                    float: left;
+                                    width: 30px;
+                                    text-align: center;
+                                    line-height: 22px;
+                                }
+
+                                .jia {
+                                    width: 22px;
+                                    height: 22px;
+                                    display: block;
+                                    cursor: pointer;
+                                    float: left;
+                                    border-left: 1px solid #e2e2e2;
+                                    text-align: center;
+                                    line-height: 22px;
+
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+
+                tfoot {
+                    height: 30px;
+                    // background: #ff0;
+
+                    tr {
+                        display: block;
+                        height: 50px;
+                        border: 1px solid #ccc;
+
+
+                        td {
+                            display: inline-block;
+                            height: 50px;
+                            line-height: 50px;
+                            color: #333;
+                            font-weight: 700;
+                            font-size: 12px;
+
+                            .cbox {
+                                border-radius: 50%;
+                                background: url(https://img.miyabaobei.com/d1/p3/2016/03/23/ff/27/ff2788474f897fc85df54920bb84816d.png);
+                                width: 23px;
+                                height: 22px;
+                                // background-position: 0 -176px;
+                                // background-position: 0 0px;
+                                background-repeat: no-repeat;
+                                display: inline-block;
+                                margin-left: 32px;
+
+                                input {
+                                    opacity: 0;
+                                    position: absolute;
+                                    width: 23px;
+                                    height: 22px;
+                                    top: 0;
+                                    left: 0;
+                                }
+                            }
+
+                            .cboxactive {
+                                background-position: 0 -176px;
+
+                            }
+
+                            label {
+                                position: relative;
+                                top: 0px;
+                                font-size: 14px;
+                                font-weight: bold;
+                                padding-right: 15px;
+                            }
+
+                            a {
+                                padding-left: 5px;
+                                color: #666;
+                                font-size: 12px;
+                            }
+
+                            b {
+                                font-size: 18px;
+                                color: #fa4b9b;
+                                font-weight: 400;
+                            }
+
+                            button {
+                                float: right;
+                                text-align: center;
+                                color: #fff;
+                                background-color: #fa4b9b;
+                                // border: 1px solid #fa4b9b;
+                                line-height: 50px;
+                                margin-top: -1px;
+                                margin-right: -1px;
+                                padding: 0 19px;
+                                font-size: 19.5px;
+                                cursor: pointer;
+                                margin-left: 100px;
+
                             }
                         }
                     }

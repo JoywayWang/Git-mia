@@ -1,13 +1,15 @@
-.cart {
+.cart2 {
+  background: #fff;
   min-height: 240px;
 }
 
-.cart .content .kong {
+.cart2 .content .kong {
   width: 700px;
   margin: 30px auto;
+  display: none;
 }
 
-.cart .content .kong i {
+.cart2 .content .kong i {
   display: block;
   float: left;
   width: 100px;
@@ -17,41 +19,285 @@
   margin-right: 20px;
 }
 
-.cart .content .kong h3 {
+.cart2 .content .kong h3 {
   padding-top: 20px;
   font-size: 30px;
   color: dimgray;
   margin-bottom: 20px;
+  width: 980px;
 }
 
-.cart .content .kong p a {
+.cart2 .content .kong p a {
   color: #b9253e;
   font-weight: 900;
 }
 
-.cart .content .cartlist h3 {
+.cart2 .content .cartlist {
+  width: 1000px;
+  margin: auto;
+}
+
+.cart2 .content .cartlist h3 {
   border-bottom: 2px solid #fa4b9b;
   padding-bottom: 10px;
   padding-right: 10px;
   color: #333;
   font-size: 24px;
+  margin: auto;
 }
 
-.cart .content .cartlist table thead {
+.cart2 .content .cartlist table {
   width: 100%;
 }
 
-.cart .content .cartlist table thead tr {
+.cart2 .content .cartlist table thead {
+  display: block;
+  width: 1000px;
+  padding: 10px 0;
+}
+
+.cart2 .content .cartlist table thead tr {
   overflow: hidden;
   background: #fff;
-  padding: 15px;
 }
 
-.cart .content .cartlist table thead tr th {
+.cart2 .content .cartlist table thead tr th {
+  display: inline-block;
   width: 114px;
+  line-height: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.cart .content .cartlist table thead tr th .cbox {
+.cart2 .content .cartlist table thead tr th .cbox {
   border-radius: 50%;
   background: url(https://img.miyabaobei.com/d1/p3/2016/03/23/ff/27/ff2788474f897fc85df54920bb84816d.png);
+  width: 23px;
+  height: 22px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.cart2 .content .cartlist table thead tr th .cbox input {
+  opacity: 0;
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  top: 0;
+  left: 0;
+}
+
+.cart2 .content .cartlist table thead tr th .cboxactive {
+  background-position: 0 -176px;
+}
+
+.cart2 .content .cartlist table thead tr th label {
+  position: relative;
+  top: -6px;
+}
+
+.cart2 .content .cartlist table thead tr th:last-child {
+  border-right: none;
+}
+
+.cart2 .content .cartlist table thead tr th:first-child {
+  border-right: none;
+}
+
+.cart2 .content .cartlist table tbody {
+  display: block;
+  width: 1000px;
+  padding: 10px 0;
+}
+
+.cart2 .content .cartlist table tbody tr {
+  display: block;
+  padding: 5px 0;
+  border-top: 1px solid #ccc;
+}
+
+.cart2 .content .cartlist table tbody tr td {
+  display: inline-block;
+  width: 114px;
+  line-height: 20px;
+  height: 80px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.cart2 .content .cartlist table tbody tr td .cbox {
+  border-radius: 50%;
+  background: url(https://img.miyabaobei.com/d1/p3/2016/03/23/ff/27/ff2788474f897fc85df54920bb84816d.png);
+  width: 23px;
+  height: 22px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 32px;
+  margin-top: 30px;
+}
+
+.cart2 .content .cartlist table tbody tr td .cbox input {
+  opacity: 0;
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  top: 0;
+  left: 0;
+}
+
+.cart2 .content .cartlist table tbody tr td .cboxactive {
+  background-position: 0 -176px;
+}
+
+.cart2 .content .cartlist table tbody tr td img {
+  width: 77px;
+  height: 77px;
+  float: left;
+}
+
+.cart2 .content .cartlist table tbody tr td p {
+  color: #666;
+  width: 234px;
+  float: right;
+}
+
+.cart2 .content .cartlist table tbody tr td i {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.cart2 .content .cartlist table tbody tr td del {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+}
+
+.cart2 .content .cartlist table tbody tr td em {
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.cart2 .content .cartlist table tbody tr td .slbox {
+  border: 1px solid #e2e2e2;
+  height: 22px;
+  width: 76px;
+  margin: auto;
+}
+
+.cart2 .content .cartlist table tbody tr td .slbox .jian {
+  width: 22px;
+  height: 22px;
+  display: block;
+  cursor: pointer;
+  float: left;
+  border-right: 1px solid #e2e2e2;
+  text-align: center;
+  line-height: 22px;
+}
+
+.cart2 .content .cartlist table tbody tr td .slbox .cartsuliang {
+  display: block;
+  float: left;
+  width: 30px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.cart2 .content .cartlist table tbody tr td .slbox .jia {
+  width: 22px;
+  height: 22px;
+  display: block;
+  cursor: pointer;
+  float: left;
+  border-left: 1px solid #e2e2e2;
+  text-align: center;
+  line-height: 22px;
+}
+
+.cart2 .content .cartlist table tfoot {
+  height: 30px;
+}
+
+.cart2 .content .cartlist table tfoot tr {
+  display: block;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.cart2 .content .cartlist table tfoot tr td {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.cart2 .content .cartlist table tfoot tr td .cbox {
+  border-radius: 50%;
+  background: url(https://img.miyabaobei.com/d1/p3/2016/03/23/ff/27/ff2788474f897fc85df54920bb84816d.png);
+  width: 23px;
+  height: 22px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 32px;
+}
+
+.cart2 .content .cartlist table tfoot tr td .cbox input {
+  opacity: 0;
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  top: 0;
+  left: 0;
+}
+
+.cart2 .content .cartlist table tfoot tr td .cboxactive {
+  background-position: 0 -176px;
+}
+
+.cart2 .content .cartlist table tfoot tr td label {
+  position: relative;
+  top: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.cart2 .content .cartlist table tfoot tr td a {
+  padding-left: 5px;
+  color: #666;
+  font-size: 12px;
+}
+
+.cart2 .content .cartlist table tfoot tr td b {
+  font-size: 18px;
+  color: #fa4b9b;
+  font-weight: 400;
+}
+
+.cart2 .content .cartlist table tfoot tr td button {
+  float: right;
+  text-align: center;
+  color: #fff;
+  background-color: #fa4b9b;
+  line-height: 50px;
+  margin-top: -1px;
+  margin-right: -1px;
+  padding: 0 19px;
+  font-size: 19.5px;
+  cursor: pointer;
+  margin-left: 100px;
 }

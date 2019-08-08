@@ -65,6 +65,7 @@
  }
 
  .item-info-name a {
+     font-size: 12px;
      text-decoration: none;
      color: #666;
      cursor: pointer;
@@ -73,7 +74,8 @@
      width: 220px;
      padding: 5px;
      display: inline-block;
-     line-height: 26px;
+     line-height: 24px;
+     height: 22px;
  }
 
  .item-info-name a:hover {
@@ -84,15 +86,26 @@
  .tahoma_active {
      line-height: 25px;
      height: 25px;
+     font-size: 12px;
+     color: #fa4b9b;
+     line-height: 1.5;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     margin-top: 5px;
  }
 
  .active-type {
      color: #fff;
      background: #f450a2;
-     width: 130px;
+     //  width: 130px;
      font-size: 12px;
      display: inline-block;
      text-align: center;
+     color: #fff;
+     background: #fa4b9b;
+     padding: 0 2px 2px 2px;
+     margin-right: 7px;
  }
 
  .active-text {
@@ -143,16 +156,22 @@
  }
 
  #nav {
-     width: 1130px;
-     height: 30px;
-     line-height: 30px;
+     width: 1100px;
+     height: 50px;
+     line-height: 50px;
      margin: 0 auto;
      /* background: #999; */
      padding-left: 15px;
-     border: 1px solid #000;
+     //  border: 1px solid #f450a2;
+     background: #FFF;
+     margin: 20px auto;
  }
 
  #nav li {
      float: left;
-     width: 200px;
+     width: 75px;
+     font-size: 12px;
+     line-height: 50px;
+     color: #f450a2;
+     cursor: pointer;
  }

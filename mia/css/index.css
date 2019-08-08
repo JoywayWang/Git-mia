@@ -1047,6 +1047,21 @@ body {
   color: #fa4b9b;
 }
 
+.adv .navright .navlist ul li .gwcsl {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: red;
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  z-index: 99;
+  line-height: 20px;
+  text-align: center;
+  top: 0px;
+  left: 30px;
+}
+
 .adv .navright .navlist ul li .wx-f {
   display: none;
   position: absolute;

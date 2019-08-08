@@ -16,7 +16,7 @@ class Adv {
         <div class="navright"">
          <div class="navlist">
             <ul>
-            <li><a href="##"><i class="iconfont icon-ai-cart"></i>购物车</a></li>
+            <li><a href="##"><i class="iconfont icon-ai-cart"></i>购物车</a><div class = "gwcsl">0<div></li>
             <li><i class="iconfont icon-zixundianhua"></i>咨询</li>
             <li><i class="iconfont icon-zixun1"></i>微信<div class="wx-f"></div></li>
             </ul>
@@ -36,5 +36,8 @@ class Adv {
             $(".wx-f").css("right", "97px");
         }
         );
+        $(".navlist").find("li").eq(0).click(function () {
+            window.open("../html/cart.html", "_self");
+        })
     }
 }
