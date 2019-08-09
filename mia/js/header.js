@@ -52,10 +52,13 @@ class Header {
             Cookie.setItem("usn", "", -1, "/");
         });
         $("#denglu").click(function () {
-            window.location.href = "http://127.0.0.1/code/mia/Gitmia/mia/html/login.html";
+            window.location.href = "/code/mia/Gitmia/mia/html/login.html";
         })
         $("#zhuce").click(function () {
-            window.location.href = "http://127.0.0.1/code/mia/Gitmia/mia/html/sign.html";
+            window.location.href = "/code/mia/Gitmia/mia/html/sign.html";
+        })
+        $(".cart").click(function () {
+            window.open("/code/mia/Gitmia/mia/html/cart.html", "_self");
         })
     }
 

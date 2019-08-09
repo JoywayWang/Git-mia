@@ -20,6 +20,7 @@ class Details {
         this.addHover();
         this.addEveforbtn();
         this.addclickforcart();
+        // this.addbig();
     }
     creEle() {
         $(`<div class="details">
@@ -30,7 +31,7 @@ class Details {
                 <a class="deback" href="#">列表</a>
                 <span>&gt;${this.data.title}</span>
             </p>
-            <dl class="dedl">
+            <dl class="dedl" id="magnifier1">
                 <dt>
                     <div class="debig class="zoomTarget"">
                     <img class="imgh0" src="${this.data.src}" alt="">
@@ -124,6 +125,16 @@ class Details {
         </div>
     </div>`).appendTo(this.root);
     }
+    addbig() {
+        var magnifierConfig = {
+            magnifier: "#magnifier1", //最外层的大容器
+            width: 400, //承载容器宽
+            height: 400, //承载容器高
+            moveWidth: null, //如果设置了移动盒子的宽度，则不计算缩放比例
+            zoom: 10 //缩放比例
+        };
+        var _magnifier = magnifier(magnifierConfig);
+    }
     addClick() {
         $(".deback").eq(0).on("click", () => {
             window.open(`http://127.0.0.1/code/mia/Gitmia/mia/miaindex.html`, "_self");
@@ -170,6 +181,8 @@ class Details {
                 success: function (response) {
                     console.log(response);
                     var text = response["totalRow"];
+                    // localStorage.setItem("gs", text)
+
                     $(".gwcsl").html(text)
 
                 }

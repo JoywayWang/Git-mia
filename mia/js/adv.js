@@ -7,6 +7,7 @@ class Adv {
 
         this.creEle();
         this.addeve()
+        // this.addajax()
     }
     creEle() {
         let html = `<div class="navleft">
@@ -37,7 +38,10 @@ class Adv {
         }
         );
         $(".navlist").find("li").eq(0).click(function () {
-            window.open("../html/cart.html", "_self");
+            window.open("/code/mia/Gitmia/mia/html/cart.html", "_self");
         })
+    }
+    addajax() {
+        $(".gwcsl").html(localStorage.gs)
     }
 }
